@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 ARG DEBIAN_FRONTEND=noninteractive
-FROM debian:bookworm-slim
+FROM debian:13.7-slim@sha256:a29215f6a35e51e22adffa17f89e9d2ef06214e64a2bad10d765c46aea49f11f
 
 ENV ADMIN_PASSWORD=admin
 
@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
     cups \
     cups-bsd \
     cups-filters \
+    libcupsimage2t64 \
     foomatic-db-compressed-ppds \
     printer-driver-all \
     openprinting-ppds \
