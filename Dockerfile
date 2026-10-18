@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 ARG DEBIAN_FRONTEND=noninteractive
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
 
 ENV ADMIN_PASSWORD=admin
 
