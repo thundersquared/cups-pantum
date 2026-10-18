@@ -2,7 +2,7 @@
 
 This is a pretty chill Docker image that builds the latest version of CUPS and bundles the following Pantum driver:
 
-- Pantum Ubuntu Driver V1.1.123
+- Pantum Linux Driver V1.1.186
 
 ## Quick Start
 

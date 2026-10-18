@@ -24,10 +24,10 @@ RUN apt-get update && apt-get install -y \
 # Download and install Pantum driver
 WORKDIR /tmp
 RUN curl -fsSLo driver.zip -H 'Referer: https://global.pantum.com/support/download/driver/' \
-    'https://drivers.pantum.com/userfiles/files/download/drive/2013/Pantum%20Ubuntu%20Driver%20V1_1_123.zip' \
+    'https://drivers.pantum.com/userfiles/files/download/drive/5103/Pantum%20Linux%20Driver%20V1_1_186.zip' \
     && unzip driver.zip \
     && cd Pantum* \
-    && dpkg -i Resources/pantum_1.1.123-1_amd64.deb \
+    && dpkg -i Resources/pantum_1.1.186-1_amd64.deb \
     && cd .. \
     && rm -rf /tmp/*
 
