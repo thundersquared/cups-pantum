@@ -1,5 +1,6 @@
 # syntax=docker/dockerfile:1
-FROM debian:13.7-slim@sha256:a29215f6a35e51e22adffa17f89e9d2ef06214e64a2bad10d765c46aea49f11f
+# Ubuntu 26.04 LTS
+FROM ubuntu:resolute-20261006@sha256:c098726dd9b9733f3e885f8de0ef375206a311b0a317eadc40d347b1115fb944
 
 # Build-time only, so it doesn't leak into the running container
 ARG DEBIAN_FRONTEND=noninteractive
@@ -17,6 +18,7 @@ RUN apt-get update && apt-get install -y \
     cups-bsd \
     cups-filters \
     libcupsimage2t64 \
+    libjpeg-turbo8 \
     foomatic-db-compressed-ppds \
     printer-driver-all \
     openprinting-ppds \
